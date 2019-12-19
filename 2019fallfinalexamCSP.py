@@ -25,6 +25,7 @@ import random
 #create turtle
 pencil= trtl.Turtle()
 pencil.shapesize(2)
+
 #creates variables
 pencil_size= 5
 pencil.pensize(pencil_size)
@@ -81,6 +82,7 @@ def clear_pencil():
 #function that changes color randomly
 def rand_color():
     pencil.pencolor(random.choice(colors))
+
 #create screen
 wn= trtl.Screen()
 
@@ -104,6 +106,7 @@ wn.onkeypress(clear_pencil, "space")
 
 #keypress that changes the color of the pen
 wn.onkeypress(rand_color, "r")
+
 #listen
 wn.listen()
 
